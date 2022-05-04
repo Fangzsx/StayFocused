@@ -8,6 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     
-    <color name="pinkishGray">#D8CBCB</color>
+    <color name="lightModeBg">#D8CBCB</color>
+    <color name="darkModeBg">#111020</color>
     <color name="lightModeAccent">#544D4D</color>
+    <color name="darkModeAccent">#F03A47</color>
 </resources>

@@ -9,6 +9,13 @@
     android:padding="@dimen/_10sdp"
     tools:context=".PomodoroActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_24"
+        android:layout_gravity="end"/>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -65,15 +72,17 @@
             android:layout_weight="1"
             android:tag="middle"
             android:gravity="center">
-
+            
             <ImageView
                 android:id="@+id/iv_timer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/cicle_style"/>
+                android:src="@drawable/cicle_style"
+                app:tint="?colorPrimary" />
 
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/ll_right"
             android:layout_width="match_parent"
@@ -82,9 +91,6 @@
             android:gravity="center"
             android:tag="right"
             android:layout_weight="1"/>
-
-
-
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -128,6 +134,8 @@
         android:textAllCaps="false"
         app:icon="@drawable/ic_play_24"
         app:iconGravity="textStart"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
         android:background="@drawable/button_bg"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20sdp"
