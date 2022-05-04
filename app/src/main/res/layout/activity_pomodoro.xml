@@ -9,14 +9,40 @@
     tools:context=".PomodoroActivity">
 
     <LinearLayout
-        android:id="@+id/ll_top"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:tag="top"
         android:gravity="center"
-        android:background="@android:color/holo_red_light"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_top_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:tag="top left"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/ll_top_middle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:tag="top_middle"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/ll_top_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="top_right"
+            android:orientation="horizontal"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,7 +55,6 @@
             android:orientation="horizontal"
             android:gravity="center"
             android:tag="left"
-            android:background="@android:color/holo_orange_dark"
             android:layout_weight="1"/>
         <LinearLayout
             android:id="@+id/ll_center"
@@ -38,7 +63,6 @@
             android:orientation="horizontal"
             android:layout_weight="1"
             android:tag="middle"
-            android:background="@android:color/holo_blue_bright"
             android:gravity="center">
 
             <ImageView
@@ -52,7 +76,6 @@
             android:id="@+id/ll_right"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/holo_green_dark"
             android:orientation="horizontal"
             android:gravity="center"
             android:tag="right"
@@ -62,14 +85,39 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/ll_bottom"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="center"
         android:tag="bottom"
-        android:background="@android:color/darker_gray"
-        android:orientation="horizontal"/>
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:tag="bottom left"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/ll_bottom_middle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:tag="bottom middle"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/ll_bottom_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:tag="bottom right"
+            android:orientation="horizontal"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"

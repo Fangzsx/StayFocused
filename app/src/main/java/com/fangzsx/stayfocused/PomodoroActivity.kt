@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.Toast
 import com.fangzsx.stayfocused.databinding.ActivityPomodoroBinding
 
 class PomodoroActivity : AppCompatActivity() {
@@ -63,6 +64,9 @@ class PomodoroActivity : AppCompatActivity() {
                     val destination = view as LinearLayout
                     destination.addView(dragView)
                     dragView.visibility = View.VISIBLE
+
+                    Toast.makeText(this, "From: $fromParentName To: ${destination.tag}", Toast.LENGTH_SHORT).show()
+                    
                     true
                 }
 
@@ -74,8 +78,12 @@ class PomodoroActivity : AppCompatActivity() {
             }
         }
 
-        binding.llTop.setOnDragListener(dragListener)
-        binding.llBottom.setOnDragListener(dragListener)
+        binding.llTopLeft.setOnDragListener(dragListener)
+        binding.llTopRight.setOnDragListener(dragListener)
+        binding.llTopMiddle.setOnDragListener(dragListener)
+        binding.llBottomLeft.setOnDragListener(dragListener)
+        binding.llBottomMiddle.setOnDragListener(dragListener)
+        binding.llBottomRight.setOnDragListener(dragListener)
         binding.llLeft.setOnDragListener(dragListener)
         binding.llCenter.setOnDragListener(dragListener)
         binding.llRight.setOnDragListener(dragListener)
