@@ -294,6 +294,7 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1">
                         <ImageView
+                            android:id="@+id/iv_palette1"
                             android:layout_width="@dimen/_48sdp"
                             android:layout_height="@dimen/_48sdp"
                             android:scaleType="fitCenter"
@@ -302,6 +303,114 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             android:src="@drawable/palette1"/>
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:minWidth="0dp"
+                           android:minHeight="0dp"
+                           android:layout_marginBottom="@dimen/_7sdp"
+                           app:layout_constraintTop_toTopOf="@id/iv_palette1"
+                           app:layout_constraintBottom_toBottomOf="@id/iv_palette1"
+                           app:layout_constraintStart_toStartOf="@id/iv_palette1"
+                           app:layout_constraintEnd_toEndOf="@id/iv_palette1"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_palette2"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="@dimen/_48sdp"
+                            android:scaleType="fitCenter"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/palette2"/>
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:minWidth="0dp"
+                           android:minHeight="0dp"
+                           android:layout_marginBottom="@dimen/_7sdp"
+                           app:layout_constraintTop_toTopOf="@id/iv_palette2"
+                           app:layout_constraintBottom_toBottomOf="@id/iv_palette2"
+                           app:layout_constraintStart_toStartOf="@id/iv_palette2"
+                           app:layout_constraintEnd_toEndOf="@id/iv_palette2"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_palette3"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="@dimen/_48sdp"
+                            android:scaleType="fitCenter"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/palette3"/>
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:minWidth="0dp"
+                           android:minHeight="0dp"
+                           android:layout_marginBottom="@dimen/_7sdp"
+                           app:layout_constraintTop_toTopOf="@id/iv_palette3"
+                           app:layout_constraintBottom_toBottomOf="@id/iv_palette3"
+                           app:layout_constraintStart_toStartOf="@id/iv_palette3"
+                           app:layout_constraintEnd_toEndOf="@id/iv_palette3"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_palette4"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="@dimen/_48sdp"
+                            android:scaleType="fitCenter"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/palette4"/>
+                       <CheckBox
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:minWidth="0dp"
+                           android:minHeight="0dp"
+                           android:layout_marginBottom="@dimen/_7sdp"
+                           app:layout_constraintTop_toTopOf="@id/iv_palette4"
+                           app:layout_constraintBottom_toBottomOf="@id/iv_palette4"
+                           app:layout_constraintStart_toStartOf="@id/iv_palette4"
+                           app:layout_constraintEnd_toEndOf="@id/iv_palette4"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:id="@+id/iv_palette5"
+                            android:layout_width="@dimen/_48sdp"
+                            android:layout_height="@dimen/_48sdp"
+                            android:scaleType="fitCenter"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:src="@drawable/palette5"/>
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
