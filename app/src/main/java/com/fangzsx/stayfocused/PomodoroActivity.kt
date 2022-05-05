@@ -2,6 +2,7 @@ package com.fangzsx.stayfocused
 
 import android.content.ClipData
 import android.content.ClipDescription
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.DragEvent
@@ -20,6 +21,12 @@ class PomodoroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPomodoroBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.ivSettings.setOnClickListener {
+            Intent(this, SettingsActivity::class.java).apply {
+                startActivity(this)
+            }
+        }
 
         binding.clTimer.setOnLongClickListener {
 

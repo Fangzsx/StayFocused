@@ -10,10 +10,12 @@
     tools:context=".PomodoroActivity">
 
     <ImageView
+        android:id="@+id/iv_settings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_menu_24"
-        android:layout_gravity="end"/>
+        android:layout_gravity="end"
+        app:tint="@color/lightModeAccent" />
 
 
     <LinearLayout
@@ -89,6 +91,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="25:00"
+                    android:fontFamily="@font/futurawinb"
                     android:textSize="@dimen/_20ssp"
                     android:textColor="@color/white"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -145,6 +148,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start to Focus"
+        android:fontFamily="@font/futurawin"
         android:layout_gravity="center_horizontal"
         android:textAllCaps="false"
         app:icon="@drawable/ic_play_24"

@@ -10,4 +10,5 @@
     
     <color name="lightModeBg">#D8CBCB</color>
     <color name="lightModeAccent">#544D4D</color>
+    <color name="lightModeTextColor">#312C2C</color>
 </resources>
