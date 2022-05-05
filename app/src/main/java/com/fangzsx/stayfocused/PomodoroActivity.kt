@@ -64,9 +64,6 @@ class PomodoroActivity : AppCompatActivity() {
                     val destination = view as LinearLayout
                     destination.addView(dragView)
                     dragView.visibility = View.VISIBLE
-
-                    Toast.makeText(this, "From: $fromParentName To: ${destination.tag}", Toast.LENGTH_SHORT).show()
-                    
                     true
                 }
 

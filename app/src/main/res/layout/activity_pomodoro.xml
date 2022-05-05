@@ -72,7 +72,7 @@
             android:layout_weight="1"
             android:tag="middle"
             android:gravity="center">
-            
+
             <ImageView
                 android:id="@+id/iv_timer"
                 android:layout_width="match_parent"
@@ -128,14 +128,17 @@
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start to Focus"
+        android:layout_gravity="center_horizontal"
         android:textAllCaps="false"
         app:icon="@drawable/ic_play_24"
         app:iconGravity="textStart"
         android:textColor="@color/white"
         app:iconTint="@color/white"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_30sdp"
         android:background="@drawable/button_bg"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20sdp"
