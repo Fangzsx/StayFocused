@@ -21,7 +21,7 @@ class PomodoroActivity : AppCompatActivity() {
         binding = ActivityPomodoroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.ivTimer.setOnLongClickListener {
+        binding.clTimer.setOnLongClickListener {
 
             //save current parent position using tags
             val parent = it.parent as LinearLayout
@@ -54,6 +54,7 @@ class PomodoroActivity : AppCompatActivity() {
                 }
                 DragEvent.ACTION_DROP -> {
                     val item = event.clipData.getItemAt(0)
+                    //parent tag reference
                     val fromParentName = item.text
                     view.invalidate()
 

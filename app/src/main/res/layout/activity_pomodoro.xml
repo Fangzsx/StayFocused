@@ -73,13 +73,27 @@
             android:tag="middle"
             android:gravity="center">
 
-            <ImageView
-                android:id="@+id/iv_timer"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_timer"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/cicle_style"
-                app:tint="?colorPrimary" />
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/cicle_style"
+                    app:tint="?colorPrimary" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="25:00"
+                    android:textSize="@dimen/_20ssp"
+                    android:textColor="@color/white"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
         </LinearLayout>
 
