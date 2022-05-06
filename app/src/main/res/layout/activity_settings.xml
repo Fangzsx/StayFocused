@@ -303,7 +303,9 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             android:src="@drawable/palette1"/>
+
                        <CheckBox
+                           android:id="@+id/cb_palette1"
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:minWidth="0dp"
@@ -331,6 +333,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             android:src="@drawable/palette2"/>
                        <CheckBox
+                           android:id="@+id/cb_palette2"
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:minWidth="0dp"
@@ -358,6 +361,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             android:src="@drawable/palette3"/>
                        <CheckBox
+                           android:id="@+id/cb_palette3"
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:minWidth="0dp"
@@ -385,6 +389,7 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             android:src="@drawable/palette4"/>
                        <CheckBox
+                           android:id="@+id/cb_palette4"
                            android:layout_width="wrap_content"
                            android:layout_height="wrap_content"
                            android:minWidth="0dp"
