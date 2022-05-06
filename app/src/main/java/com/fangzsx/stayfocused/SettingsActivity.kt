@@ -17,6 +17,38 @@ class SettingsActivity : AppCompatActivity() {
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        selectPalette()
+        selectTimerStyle()
+
+
+    }
+
+    private fun selectTimerStyle() {
+        val checkBoxGroup = mutableListOf<CheckBox>().apply {
+            addAll(
+                arrayOf(
+                    binding.cbCircleStyle,
+                    binding.cbCirclePixel,
+                    binding.cbBorderless,
+                    binding.cbBoxedStyle,
+                )
+            )
+        }
+
+        for (checkbox in checkBoxGroup) {
+            checkbox.setOnCheckedChangeListener { _, isChecked ->
+                if (isChecked) {
+                    checkbox.buttonTintList = ColorStateList.valueOf(Color.parseColor("#63C132"))
+                    checkBoxGroup.filter { it.id != checkbox.id }.forEach { other ->
+                        other.buttonTintList = ColorStateList.valueOf(Color.parseColor("#BFB5B5"))
+                        other.isChecked = false
+                    }
+                }
+            }
+        }
+    }
+
+    private fun selectPalette() {
         val checkBoxGroup = mutableListOf<CheckBox>().apply {
             addAll(
                 arrayOf(
@@ -28,19 +60,16 @@ class SettingsActivity : AppCompatActivity() {
             )
         }
 
-
-        for (checkbox in checkBoxGroup){
+        for (checkbox in checkBoxGroup) {
             checkbox.setOnCheckedChangeListener { _, isChecked ->
-                if(isChecked){
+                if (isChecked) {
+                    checkbox.buttonTintList = ColorStateList.valueOf(Color.parseColor("#63C132"))
                     checkBoxGroup.filter { it.id != checkbox.id }.forEach { other ->
+                        other.buttonTintList = ColorStateList.valueOf(Color.parseColor("#BFB5B5"))
                         other.isChecked = false
                     }
                 }
             }
         }
-
-
-
-
     }
 }
