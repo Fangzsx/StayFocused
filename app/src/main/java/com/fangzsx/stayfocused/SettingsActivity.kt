@@ -32,10 +32,8 @@ class SettingsActivity : AppCompatActivity() {
         for (checkbox in checkBoxGroup){
             checkbox.setOnCheckedChangeListener { _, isChecked ->
                 if(isChecked){
-                    checkbox.buttonTintList = ColorStateList.valueOf(Color.parseColor("#63C132"));
                     checkBoxGroup.filter { it.id != checkbox.id }.forEach { other ->
                         other.isChecked = false
-                        other.buttonTintList = ColorStateList.valueOf(Color.parseColor("#544D4D"));
                     }
                 }
             }
