@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StayFocused">
         <activity
+            android:name=".MoreSettingActivity"
+            android:exported="false" />
+        <activity
             android:name=".SettingsActivity"
             android:exported="false" />
         <activity

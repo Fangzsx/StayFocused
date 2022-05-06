@@ -1,5 +1,6 @@
 package com.fangzsx.stayfocused
 
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,12 @@ class SettingsActivity : AppCompatActivity() {
 
         selectPalette()
         selectTimerStyle()
+
+        binding.btnMoreSettings.setOnClickListener {
+            Intent(this, MoreSettingActivity::class.java).apply {
+                startActivity(this)
+            }
+        }
 
 
     }
