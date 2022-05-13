@@ -377,6 +377,7 @@
                 android:textSize="@dimen/_15ssp" />
 
             <LinearLayout
+                android:id="@+id/ll_music"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/tv_lofi3"
@@ -400,8 +401,46 @@
                     android:textSize="@dimen/_15ssp"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:textColor="?colorOnSecondary"/>
-
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/futurawinsb"
+                android:text="Font"
+                android:textColor="?colorOnSecondary"
+                android:layout_marginTop="@dimen/_22sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ll_music"
+                android:textSize="@dimen/_18ssp" />
+
+            <TextView
+                android:id="@+id/tv_futura_windows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/futurawin"
+                android:text="Futura Windows"
+                android:textColor="?colorOnSecondary"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_font"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/tv_pixelboy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pixelboy"
+                android:text="PIXELBOY"
+                android:textColor="?colorOnSecondary"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_futura_windows"
+                android:textSize="@dimen/_30ssp" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
